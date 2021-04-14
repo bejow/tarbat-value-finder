@@ -9,10 +9,10 @@ export const LayoutWrapper = ({ children }) => {
       <div className={styles.middle}>
         <Card className={styles.inner}>{children}</Card>
       </div>
-      <img className={styles.logoBottomRight} src={logo}/> 
-      <img className={styles.logoBottomLeft} src={logo}/> 
-      <img className={styles.logoTopLeft} src={logo}/> 
-      <img className={styles.logoTopRight} src={logo}/> 
+      <img alt="logo"  className={styles.logoBottomRight} src={logo}/> 
+      <img alt="logo" className={styles.logoBottomLeft} src={logo}/> 
+      <img alt="logo" className={styles.logoTopLeft} src={logo}/> 
+      <img alt="logo" className={styles.logoTopRight} src={logo}/> 
 
     </div>
   );

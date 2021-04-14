@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./SituationValueSelection.module.scss";
 import FormLabel from "@material-ui/core/FormLabel";
 import FormControl from "@material-ui/core/FormControl";
-import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import { situationValues as values } from "../../constants/values";
@@ -14,7 +13,6 @@ const shuffledActionEmotions = shuffle(values);
 const SituationValueSelection = ({
   handleValueChange,
   handleNextStep,
-  handlePreviousStep,
   isNextPossible,
   situationValues,
 }) => {

@@ -1,11 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import ValueComparisonResult from "./components/ValueComparisonResult/ValueComparisonResult";
 import ValueComparison from "./components/ValueComparison/ValueComparison";
 import SituationValueSelection from "./components/SituationValueSelection/SituationValueSelection";
 import { LayoutWrapper } from "./components/LayoutWrapper/LayoutWrapper";
-import { Button } from "@material-ui/core";
 import styles from "./App.module.scss";
 import { Description } from "./components/Description/Description";
 
@@ -78,6 +76,10 @@ function App() {
         );
       case 2:
         return <ValueComparisonResult sortedValues={sortedSituationValues} />;
+      default:
+        return (
+          <Description handleNextStep={handleNextStep}/>
+        )
     }
   };
 

@@ -1,17 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { LayoutWrapper } from "../LayoutWrapper/LayoutWrapper";
 import styles from "./ValueComparison.module.scss";
 
 const ValueComparison = ({ values, handleValuesSorted }) => {
   const [state, setState] = useState(
     values.map((value) => ({ value, priority: 0 }))
   );
-
-  useEffect(() => {
-    if (nextPair === false) {
-      handleValuesSorted([...state].sort((a, b) => b.priority - a.priority));
-    }
-  }, [state]);
 
   const selectNextPair = () => {
     for (
@@ -32,6 +25,17 @@ const ValueComparison = ({ values, handleValuesSorted }) => {
     }
     return false;
   };
+  
+  var nextPair;
+  nextPair = selectNextPair();
+
+  useEffect(() => {
+    if (nextPair === false) {
+      handleValuesSorted([...state].sort((a, b) => b.priority - a.priority));
+    }
+  }, [state, nextPair, handleValuesSorted]);
+  
+  
 
   const handleClick = (value) => {
     var newState = [...state];
@@ -41,8 +45,7 @@ const ValueComparison = ({ values, handleValuesSorted }) => {
 
   console.log(state);
   console.log(selectNextPair());
-  var nextPair;
-  nextPair = selectNextPair();
+
 
   return (
     <div>
