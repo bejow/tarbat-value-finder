@@ -1,0 +1,20 @@
+.compareContainer {
+  margin-top: 32px;
+}
+
+.valueContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.value {
+  background-color: #3f51b5;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+  &:hover {
+    background-color: #002984;
+  }
+}
