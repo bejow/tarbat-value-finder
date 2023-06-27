@@ -6,11 +6,12 @@ import SituationValueSelection from "./components/SituationValueSelection/Situat
 import { LayoutWrapper } from "./components/LayoutWrapper/LayoutWrapper";
 import styles from "./App.module.scss";
 import { Description } from "./components/Description/Description";
+import { situationValues as values } from "./constants/values";
 
 function App() {
   const [state, setState] = useState({
-    step: -1,
-    situationValues: [],
+    step: 1,
+    situationValues: [...values],
     sortedSituationValues: [],
   });
   const { step, situationValues, sortedSituationValues } = state;

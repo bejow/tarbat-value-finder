@@ -50,11 +50,10 @@ const ValueComparison = ({ values, handleValuesSorted }) => {
   return (
     <div>
       <p>
-        You will be shown two values: pick the one that is more important to
-        you. Don't think about it for long and just follow your intuition!
+       Auf welche Eigenschaft würden sie bei einem Bewerbungsgespräch eines Entwicklers eher achten?
       </p>
       <div className={styles.compareContainer}>
-        <p>Which value is more important to you?</p>
+        <p>Which characteristic would you tend to look for when interviewing a developer?</p>
         <div className={styles.valueContainer}>
           <p onClick={() => handleClick(nextPair[0])} className={styles.value}>
             {nextPair ? nextPair[0].value : null}
