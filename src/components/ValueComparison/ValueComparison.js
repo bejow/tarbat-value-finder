@@ -50,11 +50,12 @@ const ValueComparison = ({ values, handleValuesSorted }) => {
   return (
     <div>
       <p>
-        You will be shown two values: pick the one that is more important to
-        you. Don't think about it for long and just follow your intuition!
+      Wir werden Dir jetzt immer 2 Werte präsentieren und Du klickst auf den,
+        der Dir wichtiger ist. Denk nicht lange darüber nach, Dein erster Impuls
+        leitet deine Entscheidung.{" "}
       </p>
       <div className={styles.compareContainer}>
-        <p>Which value is more important to you?</p>
+        <p>Welcher Wert ist dir wichtiger?</p>
         <div className={styles.valueContainer}>
           <p onClick={() => handleClick(nextPair[0])} className={styles.value}>
             {nextPair ? nextPair[0].value : null}

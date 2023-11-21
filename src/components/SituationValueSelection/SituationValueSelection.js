@@ -21,10 +21,10 @@ const SituationValueSelection = ({
       <div>
         <FormControl>
           <p>
-            From the list below, choose 5-8 values that you find important.
-            Follow your intuition and don't dwell on your choices for too long!
-            They will be ranked later to allow you to narrow them down to your
-            core values.
+          Welche Werte bzw. Bedürfnisse sind 
+            besonders wichtig für dich? Wähle zwischen 5 und 8 Begriffe aus der
+            folgenden Liste. Lass Dich hier von Deinen Impulsen leiten und denk
+            nicht zu lange drüber nach.{" "}
           </p>
           <div className={styles.formGroup}>
             <div>
@@ -44,7 +44,7 @@ const SituationValueSelection = ({
               })}
             </div>
           </div>
-          <FormLabel>Please choose between 5 and 8 values!</FormLabel>
+          <FormLabel>Bitte wähle zwischen 5 und 8 Begriffe aus!</FormLabel>
         </FormControl>
 
         <div className={styles.buttonContainer}>
