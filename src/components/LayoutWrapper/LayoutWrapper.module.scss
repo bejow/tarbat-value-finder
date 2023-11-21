@@ -36,3 +36,13 @@
   right: 10px;
   z-index: 1;
 }
+
+@media only screen and (max-width: 1100px) {
+  .logoTopLeft{
+    display: none;
+  }
+
+  .logoTopRight{
+    display: none;
+  }
+}
